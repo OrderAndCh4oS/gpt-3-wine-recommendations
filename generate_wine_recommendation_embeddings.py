@@ -14,6 +14,7 @@ def get_embedding(text, model="text-similarity-curie-001"):
     text = text.replace("\n", " ")
     return openai.Embedding.create(input=[text], model=model)['data'][0]['embedding']
 
+
 def main():
     with open("wine_tasting_notes_tagged.csv") as f:
         wine_list = f.readlines()
