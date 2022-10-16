@@ -23,11 +23,6 @@ def main():
 
     pprint(completion)
 
-    text = completion.choices[0].text
-
-    if text[-1] not in ['.', '!', '?']:
-
-
     print(prompt + ' ' + completion.choices[0].text)
 
 
